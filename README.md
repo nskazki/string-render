@@ -16,7 +16,7 @@ This module replaces all escape sequence by spaces and line breaks.
 
 ## Warning!
 
-The module does not supported an [ANSI escape codes](http://en.wikipedia.org/wiki/ANSI_escape_code).
+This module does not supported an [ANSI escape codes](http://en.wikipedia.org/wiki/ANSI_escape_code).
 And simply removes them before forming line.
 
 ```js
