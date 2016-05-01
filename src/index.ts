@@ -6,7 +6,7 @@ import getAnsiRegex = require('ansi-regex')
 const needRender = /[\v\f\r\t\x08]/
 
 export default function stringRender(rawStr: string): string {
-  if (!needRender.test(rawStr))
+  if (!needRender.test(rawStr) && !getAnsiRegex().test(rawStr))
     return rawStr
 
   let clrStr = rawStr
