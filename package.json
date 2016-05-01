@@ -31,7 +31,6 @@
   },
   "dependencies": {
     "ansi-regex": "^2.0.0",
-    "code-point-at": "^1.0.0",
     "lodash": "^4.7.0"
   },
   "devDependencies": {
