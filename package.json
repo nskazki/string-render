@@ -1,6 +1,6 @@
 {
   "name": "string-render",
-  "description": "some\\be\\rsom\\vstrange\\r\\vline -> some\\n   strang\\nline",
+  "description": "This module replaces all escape sequence by spaces and line breaks: sr('some\\be\\rsom\\vstrange\\r\\vline') -> 'some\\n   strange\\nline'",
   "version": "1.0.0",
   "license": "MIT",
   "main": "build/src/index.js",
