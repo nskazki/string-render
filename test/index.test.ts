@@ -5,7 +5,7 @@ import { inspect } from 'util'
 import assert = require('power-assert')
 import chalk = require('chalk')
 
-describe('helpers/string/stringRender', () => {
+describe('string-render', () => {
   it('\\t x 1', () => {
     const act = sr('01234567012345670\n'
                 + '\t0\n'
