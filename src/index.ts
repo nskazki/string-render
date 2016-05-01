@@ -3,12 +3,23 @@
 import { repeat } from 'lodash'
 import getAnsiRegex = require('ansi-regex')
 
+const needRender = /[\v\f\r\t\x08]/
+
 export default function stringRender(rawStr: string): string {
+  if (!needRender.test(rawStr))
+    return rawStr
+
   let clrStr = rawStr
     .replace(getAnsiRegex(), '')
     .replace(/\v\r/g, '\n')
+    .replace(/\f\r/g, '\n')
     .replace(/\r\v/g, '\n')
+    .replace(/\r\f/g, '\n')
     .replace(/\r\n/g, '\n')
+    .replace(/\n\r/g, '\n')
+
+  if (!needRender.test(clrStr))
+    return clrStr
 
   let resStr: Array<string> = [ ]
   let resNextIndex = 0
