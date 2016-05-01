@@ -57,3 +57,8 @@ var exp = 'wow\n'
         + '01234567012345670'
 assert.equal(inspect(act), inspect(exp))
 ```
+
+## Related
+
+ * [string-true-oneline](https://github.com/nskazki/string-true-oneline) - transforms a string to a oneline string considering escape sequences
+ * [murky](https://github.com/nskazki/murky) - like util.format with additional placeholders
